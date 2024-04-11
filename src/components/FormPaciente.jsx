@@ -210,13 +210,13 @@ const FormPaciente = ({ pacientes, setPacientes, paciente, setPaciente }) => {
 
         <div className="mb-5">
           <label htmlFor="sintomas" className="block text-gray-700 uppercase font-bold">
-            Sintomas
+            Observaciones
           </label>
           <textarea
             name="sintomas"
             className="border w-11/12 p-2 mt-2 placeholder-gray-400 rounded-md"
             id="sintomas"
-            placeholder="Describe los sintomas"
+            placeholder="Deja tus observaciones"
             value={sintomas}
             onChange={onChangePaciente}
           />
@@ -225,7 +225,7 @@ const FormPaciente = ({ pacientes, setPacientes, paciente, setPaciente }) => {
         <input
           type="submit"
           className="border bg-indigo-600 w-11/12 p-3 mt-3 text-white uppercase ml-2 hover:bg-indigo-700 cursor-pointer transition-all rounded-md"
-          value={paciente.id ? 'Editar Paciente' : 'Agregar Paciente'}
+          value={paciente.id ? 'Editar Contacto' : 'Agregar Contacto'}
 
         />
       </form>
