@@ -10,10 +10,10 @@ const ListadoPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
 
       {pacientes && pacientes.length ? (
         <>
-          <h2 className="font-black text-3xl text-center">ListadoPacientes</h2>
+          <h2 className="font-black text-3xl text-center">Listado de Contactos</h2>
           <p className="text-xl mt-5 mb-10 text-center">
             Administra tus {''}
-            <span className="text-indigo-600 font-bold">Pacientes y citas</span>
+            <span className="text-indigo-600 font-bold">Datos de Contactos</span>
           </p>
 
           {pacientes.map((paciente) =>
@@ -27,10 +27,10 @@ const ListadoPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
         </>
       ) : (
         <>
-          <h2 className="font-black text-3xl text-center">No hay Pacientes</h2>
+          <h2 className="font-black text-3xl text-center">No hay Contactos</h2>
           <p className="text-xl mt-5 mb-10 text-center">
-            Agrega tus {''}
-            <span className="text-indigo-600 font-bold">Pacientes y citas</span>
+            Agrega tus Datos {''}
+            <span className="text-indigo-600 font-bold">de Contactos</span>
           </p>
         </>
       )}
